@@ -32,7 +32,7 @@ public class BasicEnemy extends GameObject{
             handler.addObject(new Trail(x, y, ID.Trail, Color.red, 16, 16, 0.03f, handler));
         }
 
-
+//write a comment!
 
     public void render(Graphics g) {
 
