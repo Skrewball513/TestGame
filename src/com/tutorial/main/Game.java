@@ -23,6 +23,8 @@ public class Game extends Canvas implements Runnable{
 
     private Spawn spawner;
 
+//    private BasicEnemy BasicEnemy;
+
     public Game(){
 
         handler = new Handler();
@@ -40,7 +42,7 @@ public class Game extends Canvas implements Runnable{
 
             handler.addObject(new Player(WIDTH/2 - 32, HEIGHT/2 - 32, ID.Player, handler));
             for(int i = 0; i < 1; i++);
-                 handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH),r.nextInt(Game.HEIGHT), ID.BasicEnemy, handler));
+            handler.addObject(new BasicEnemy(r.nextInt(Game.WIDTH),r.nextInt(Game.HEIGHT), ID.BasicEnemy, handler));
 //            handler.addObject(new BasicEnemy(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.BasicEnemy, handler));
 
 
